@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "DIRECTV Stream Utility",
+  "version": "1.0",
+  "description": "Adds keyboard shortcuts, cursor hiding, and a broken player fix to the DIRECTV Stream player",
+  "content_scripts": [
+    {
+      "matches": ["*://stream.directv.com/player*", "*://stream.directv.com/watchnow*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
